@@ -1,8 +1,10 @@
 html, body{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
     overflow-x: hidden;
 }
 
@@ -10,17 +12,17 @@ html, body{
     box-sizing: border-box;
 }
 
-body::before{
-    content: "";
-    position: fixed;
-    inset: 0;
+body {
     background-image: linear-gradient(to right top, #9a3ce3, #8849e6, #7553e8, #605be9, #4a61e8, #3474f2, #1a85fa, #0095ff, #00b3ff, #00ceff, #00e6fd, #5ffbf1);
     background-repeat: no-repeat;
     background-size: cover;
-    z-index: -1;
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 header{
+    margin-top: 3rem;
     border: 1px solid black;
     display: flex;
     align-items: center;
