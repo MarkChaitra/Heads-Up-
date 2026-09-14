@@ -12,16 +12,16 @@ document.addEventListener('click', function initTilt() {
     }
   });
   
-  function handleOrientation(event) {
+function handleOrientation(event){
     console.log(event.alpha, event.beta, event.gamma);
 
-    if(event.gamma <= 30 && event.gamma >0){
+    if(event.gamma <= 30 && event.gamma > 0){
         document.body.style.backgroundColor = 'green';  
     }
-    else if(event.gamma >= -30 && event.gamma <0){
+    else if(event.gamma >= -30 && event.gamma < 0){
         document.body.style.backgroundColor = 'red';   
     }
     else{
         document.body.style.backgroundColor = 'white';   
     }
-  }
+}
