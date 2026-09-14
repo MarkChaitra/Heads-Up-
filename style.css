@@ -66,6 +66,7 @@ header{
 }
 
 main{
+    border: 3px solid black;
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 0.5rem;
@@ -81,15 +82,4 @@ main div{
     text-align: center;
     min-width: 0;
     overflow: hidden;
-}
-
-@media (max-width: 600px){
-    main{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-    .helpContent{
-        left: auto;
-        right: 0;
-        max-width: 80vw;
-    }
 }
