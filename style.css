@@ -23,6 +23,8 @@ body {
 
 header{
     margin-top: 3rem;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
     border: 1px solid black;
     display: flex;
     align-items: center;
@@ -70,6 +72,8 @@ main{
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     padding: 0.5rem;
+    padding-left: calc(0.5rem + env(safe-area-inset-left));
+    padding-right: calc(0.5rem + env(safe-area-inset-right));
     gap: 0.5rem;
     width: 100%;
 }
