@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads Up!</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <main class="quiz-main">
+        <div class="quiz-container">
+            
+            <div class="quiz-start-screen">
+                <div class="quiz-category"></div>
+                <button onclick="countDown()" class="quiz-start-button">Start</button>
+                <p>Warning: Rotate phone to left-landscape or game will not work</p>
+            </div>
+            <div class="quiz-end-screen">
+                <div class="choices"></div>
+                <button class="quiz-home-button">Home</button>
+            </div>
+            <div class="quiz-word quiz-count-down"></div>
+            <div class="quiz-timer">60</div>
+            <button class="quiz-home-button-game">Home</button>
+        </div>
+    </main>
+    
+
+    <script src="../script/quiz.js"></script>
+</body>
+</html>
