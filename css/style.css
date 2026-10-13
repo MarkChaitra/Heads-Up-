@@ -54,7 +54,7 @@ header{
     flex-shrink: 0;
 }
 
-.help:hover .helpContent{
+.help:active .helpContent{
     visibility: visible;
 }
 
