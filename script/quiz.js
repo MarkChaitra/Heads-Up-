@@ -113,6 +113,7 @@ function gameCountDown(){
       gameStatus = 'stopped';
       document.body.style.backgroundImage = 'linear-gradient(to right top, #9a3ce3, #8849e6, #7553e8, #605be9, #4a61e8, #3474f2, #1a85fa, #0095ff, #00b3ff, #00ceff, #00e6fd, #5ffbf1)';
       quizEndScreen.style.display = `block`;
+      document.body.style.backgroundColor = 'black'; 
 
     }
   }, 1000); 
