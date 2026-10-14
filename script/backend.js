@@ -24,3 +24,22 @@ main.addEventListener('click', function(e){
   window.location.href = 'pages/quiz.html';
 
 });
+
+let header = document.querySelector('header');
+
+header.addEventListener(`click`, function(e){
+
+  let help = document.querySelector('.helpContent');
+  let p = e.target.closest('p');
+
+  if (!p) return;
+
+  let isHidden = help.style.visibility === 'hidden';
+
+  if (isHidden) {
+    help.style.visibility = 'visible';
+  } else {
+    help.style.visibility = 'hidden';
+  }
+    
+});
